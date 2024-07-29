@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>MOVIE TIME</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="#" class="nav-logo">
+            <img src="img/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Download</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Live TV</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="search nav-link">
+              <img src="img/search.png" alt="search" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <a href="#" class="search-mobile">
+          <img src="img/search.png" alt="search" />
+        </a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="container">
+        <img src="img/URI.png" alt="" />
+        <div class="home-text">
+          <h1>
+            <span style="color: #3a86ff">Unleash the Magic,</span>
+            <br />
+            Cinema and Storytelling.
+          </h1>
+          <span class="home-subtext"
+            >Discover, stream, and experience the best in film
+            <br />
+            from classics to latest blockbusters.
+          </span>
+          <div class="home-btn">
+            <a href="#" class="btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movies-section" id="movies-section">
+      <div class="movies">
+        <div class="featured">
+          <h2 class="heading">
+            FEATURED
+            <span class="heading-today" style="color: #3a86ff">TODAY</span>
+          </h2>
+
+          <div class="sort-container">
+            <picture id="sort-by-popularity" class="sort">
+              <source
+                media="(max-width: 768px)"
+                srcset="img/sort-mobile.png"
+                type="image/jpeg"
+              />
+              <img
+                src="img/sort.png"
+                alt="Sort by Popularity"
+                style="cursor: pointer"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="movies-container"></div>
+      </div>
+    </section>
+  </body>
+
+  <script src="index.js"></script>
+  <script src="themoviedbApi.js"></script>
+</html>
