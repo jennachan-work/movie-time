@@ -180,6 +180,7 @@ header {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  cursor: pointer;
   // height: 300px;
 }
 

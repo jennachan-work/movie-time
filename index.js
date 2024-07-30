@@ -11,7 +11,7 @@ function mobileMenu() {
   if (navMenu.classList.contains("active")) {
     document.querySelector(".search-mobile").style.display = "none";
   } else {
-    document.querySelector(".search-mobile").style.display = "block";
+    document.querySelector(".search-mobile").style.display = "";
   }
 }
 
